@@ -113,6 +113,14 @@
             background-size: 20px 20px;
             background-position: 0 0, 10px 10px;
         }
+
+        /* --- FAQ ACCORDION ANIMATION STYLES --- */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-light-mode">
@@ -370,12 +378,12 @@
                         <div class="wa-backdrop p-4 space-y-3.5 min-h-[220px] flex flex-col justify-end">
                             <!-- Left Bubble -->
                             <div class="bg-white text-gray-800 rounded-lg p-3 max-w-[85%] self-start shadow-sm relative text-xs sm:text-sm">
-                                <p class="text-light-mode leading-relaxed">Mas, makasih banyak ya! Akhirnya saya bisa bikin video materi tentang sistem saraf cuma 10 menit. Siswa saya pada suka bgt! 🙏✨</p>
+                                <p class="text-light-mode stroke-none">Mas, makasih banyak ya! Akhirnya saya bisa bikin video materi tentang sistem saraf cuma 10 menit. Siswa saya pada suka bgt! 🙏✨</p>
                                 <span class="block text-[9px] text-gray-400 text-right mt-1">14.20</span>
                             </div>
                             <!-- Right Bubble -->
                             <div class="bg-[#e2f7cb] text-gray-800 rounded-lg p-3 max-w-[85%] self-end shadow-sm relative text-xs sm:text-sm">
-                                <p class="text-light-mode leading-relaxed">Alhamdulillah Bu! Ikut senang kalau membantu. Gak perlu begadang lagi ya Bu? 😊</p>
+                                <p class="text-light-mode">Alhamdulillah Bu! Ikut senang kalau membantu. Gak perlu begadang lagi ya Bu? 😊</p>
                                 <div class="flex items-center justify-end gap-1 mt-1">
                                     <span class="text-[9px] text-gray-400">14.22</span>
                                     <span class="text-blue-500 text-[10px]">✓✓</span>
@@ -401,13 +409,74 @@
                         <div class="wa-backdrop p-4 min-h-[140px] flex flex-col justify-end">
                             <!-- Left Bubble -->
                             <div class="bg-white text-gray-800 rounded-lg p-3 max-w-[85%] self-start shadow-sm relative text-xs sm:text-sm">
-                                <p class="text-light-mode leading-relaxed">Edu-VGen mantap bgt. Fitur Dynamic Subtitle-nya beneran bantu mahasiswa saya lebih fokus nyimak materi kuliah. Berasa punya tim produksi sendiri! 🔥</p>
+                                <p class="text-light-mode">Edu-VGen mantap bgt. Fitur Dynamic Subtitle-nya beneran bantu mahasiswa saya lebih fokus nyimak materi kuliah. Berasa punya tim produksi sendiri! 🔥</p>
                                 <span class="block text-[9px] text-gray-400 text-right mt-1">15.04</span>
                             </div>
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: TANYA JAWAB (FAQ) -->
+    <section class="py-16 px-4 sm:px-6 bg-white text-light-mode">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-center mb-10 text-slate-900">Tanya Jawab (FAQ)</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group border border-gray-200 rounded-2xl bg-white shadow-sm overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center p-5 sm:p-6 cursor-pointer font-bold text-sm sm:text-base text-slate-800 list-none select-none">
+                        <span>Apakah ini aplikasi sekali bayar?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-300 group-open:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-5 pb-5 sm:px-6 sm:pb-6 text-sm sm:text-base text-gray-600 border-t border-gray-50 pt-4">
+                        Ya, betul sekali! Anda cukup membayar satu kali saja di awal untuk mendapatkan akses lisensi Lifetime (seumur hidup) tanpa ada biaya langganan bulanan tersembunyi.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group border border-gray-200 rounded-2xl bg-white shadow-sm overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center p-5 sm:p-6 cursor-pointer font-bold text-sm sm:text-base text-slate-800 list-none select-none">
+                        <span>Apakah butuh spesifikasi PC/Laptop tinggi?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-300 group-open:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-5 pb-5 sm:px-6 sm:pb-6 text-sm sm:text-base text-gray-600 border-t border-gray-50 pt-4">
+                        Tidak perlu. Karena seluruh sistem kecerdasan buatan (AI) Edu-VGen Pro berbasis Cloud (website), Anda bisa menggunakannya dengan lancar di laptop jadul, Chromebook, bahkan langsung via browser Smartphone Anda tanpa membebani kinerja perangkat.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group border border-gray-200 rounded-2xl bg-white shadow-sm overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center p-5 sm:p-6 cursor-pointer font-bold text-sm sm:text-base text-slate-800 list-none select-none">
+                        <span>Apakah suara AI terdengar kaku seperti robot?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-300 group-open:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-5 pb-5 sm:px-6 sm:pb-6 text-sm sm:text-base text-gray-600 border-t border-gray-50 pt-4">
+                        Tidak. Tools ini sudah menggunakan teknologi *Natural Text-to-Speech AI* generasi terbaru dengan intonasi, jeda napas, dan aksen lokal Indonesia yang terdengar sangat alami layaknya suara manusia asli (guru sesungguhnya).
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group border border-gray-200 rounded-2xl bg-white shadow-sm overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center p-5 sm:p-6 cursor-pointer font-bold text-sm sm:text-base text-slate-800 list-none select-none">
+                        <span>Bisa render video format HP (Vertikal)?</span>
+                        <svg class="w-5 h-5 text-gray-500 transition-transform duration-300 group-open:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-5 pb-5 sm:px-6 sm:pb-6 text-sm sm:text-base text-gray-600 border-t border-gray-50 pt-4">
+                        Bisa banget! Anda bisa memilih format video Landscape (16:9) yang cocok untuk presentasi proyektor kelas atau YouTube, maupun format Portrait Vertikal (9:16) untuk kebutuhan konten di TikTok, Instagram Reels, dan YouTube Shorts.
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -439,7 +508,7 @@
                 </ul>
 
                 <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-lg sm:text-2xl font-extrabold py-4 rounded-xl transition duration-300 transform hover:scale-[1.02] shadow-md">
-                    MILIKI SEKARANG JUGA
+                    MILIKI SEKA-RANG JUGA
                 </a>
                 
                 <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
