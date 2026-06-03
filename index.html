@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools AI Edu VGEN Pro - Solusi Video Pembelajaran Instan untuk Guru</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code Placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    </script>
+    
+    <!-- Global Site Tag (gtag.js) - Google Analytics Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- THEME FONT INVERSION COLOR RULES --- */
+        .text-light-mode {
+            color: #0f172a !important; 
+        }
+
+        .text-dark-mode, 
+        .bg-colorful, 
+        .bg-gray-900 {
+            color: #ffffff !important;
+        }
+
+        .bg-white .text-light-mode,
+        .bg-white span,
+        .bg-white li {
+            color: #0f172a !important;
+        }
+
+        /* --- EXCLUSIVE MATCHING COLORS & BACKGROUNDS --- */
+        .bg-colorful {
+            background: linear-gradient(135deg, #0f1c2e 0%, #080b10 100%);
+            position: relative;
+        }
+
+        .bg-colorful::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 25%; right: 25%; bottom: 0;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            pointer-events: none;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #38bdf8, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- RE-STYLING UTILITY OVERRIDES FOR PREMIUM BOX LOOK --- */
+        .text-indigo-600 { color: #0284c7 !important; }
+        .text-indigo-100 { color: #e0f2fe !important; }
+        .bg-indigo-50 { background-color: #f0f9ff !important; }
+        .bg-indigo-100 { background-color: #e0f2fe !important; }
+        .border-indigo-500:hover { border-color: #38bdf8 !important; }
+
+        /* --- RESPONSIVE MOBILE TARGETING --- */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+        }
+
+        @media (min-width: 1024px) {
+            .sticky-cta {
+                position: static;
+            }
+        }
+
+        @media (max-width: 1023.98px) {
+            body {
+                padding-bottom: 76px;
+            }
+        }
+
+        @media (max-width: 639.98px) {
+            .card-spacing {
+                padding: 1.25rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-light-mode">
+
+    <!-- Header (Hanya Text Logo, Bersih Tanpa Gambar Logo) -->
+    <header class="hidden lg:block sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-indigo-600">Edu-VGen Pro</div>
+            <a href="#pricing" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-bold transition duration-300">Miliki Sekarang Juga</a>
+        </div>
+    </header>
+
+    <!-- SECTION: ATTENTION (Hero) -->
+    <section class="bg-colorful text-dark-mode py-12 lg:py-24 px-4 sm:px-6">
+        <div class="container mx-auto text-center">
+            <span class="bg-yellow-400 text-gray-900 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-6 inline-block uppercase tracking-wider shadow-sm">
+                Khusus Guru & Tenaga Pendidik
+            </span>
+            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold mb-6 leading-tight px-2">
+                Capek Begadang Bikin Video Materi? <br class="hidden sm:block">
+                <span class="text-gradient">Ubah Naskah Jadi Video</span> Dalam Hitungan Menit!
+            </h1>
+            <p class="text-sm sm:text-base lg:text-xl mb-8 text-indigo-100 max-w-3xl mx-auto px-4">
+                Edu-VGen Pro: Asisten AI yang paham pedagogi, jago mengisi suara, dan pandai mengedit video. Bekerja 24 jam untuk Anda tanpa rasa lelah.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION: INTEREST (Problem Aware) -->
+    <section class="py-16 px-4 sm:px-6 bg-white text-light-mode">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 lg:mb-12">Kenapa Membuat Video Pembelajaran Terasa Sangat Berat?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="p-6 bg-red-50/80 rounded-xl border-l-4 border-red-500 shadow-sm card-spacing">
+                    <div class="text-red-500 mb-4 text-3xl">⏰</div>
+                    <h3 class="font-bold text-lg sm:text-xl mb-2 text-light-mode">Proses Memakan Waktu</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Habis waktu berjam-jam cari gambar di internet dan rekam suara berkali-kali karena salah terus.</p>
+                </div>
+                <div class="p-6 bg-red-50/80 rounded-xl border-l-4 border-red-500 shadow-sm card-spacing">
+                    <div class="text-red-500 mb-4 text-3xl">💻</div>
+                    <h3 class="font-bold text-lg sm:text-xl mb-2 text-light-mode">Kendala Teknis</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Laptop lemot pas rendering, aplikasi editing rumit yang menyita waktu akhir pekan Anda.</p>
+                </div>
+                <div class="p-6 bg-red-50/80 rounded-xl border-l-4 border-red-500 shadow-sm card-spacing">
+                    <div class="text-red-500 mb-4 text-3xl">😴</div>
+                    <h3 class="font-bold text-lg sm:text-xl mb-2 text-light-mode">Kurang Istirahat</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Akhirnya kurang tidur, besoknya ngajar jadi tidak maksimal karena kelelahan mengedit.</p>
+                </div>
+            </div>
+            <div class="mt-10 p-6 sm:p-8 bg-gray-900 text-dark-mode rounded-2xl text-center shadow-lg">
+                <p class="italic text-lg sm:text-xl">"Hasil visual kaku membuat siswa cepat bosan dan susah paham. Biaya langganan aplikasi editor pun makin mahal setiap bulan..."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: DESIRE (Solution) -->
+    <section class="py-16 px-4 sm:px-6 bg-indigo-50 text-light-mode">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4">Kenalkan: Tools AI Edu VGEN Pro</h2>
+                <p class="text-lg sm:text-xl text-indigo-600 font-semibold">Bikin Video Pembelajaran Tanpa Harus Jago Edit!</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+                <div class="order-2 lg:order-1 px-2">
+                    <img src="https://cdn.phototourl.com/free/2026-05-24-d03eab0d-cb02-4363-b024-cc4e9cea03c8.png" alt="AI Teacher Assistant Mockup" class="rounded-2xl shadow-xl border w-full object-cover h-64 sm:h-96">
+                </div>
+                <div class="space-y-6 sm:space-y-8 order-1 lg:order-2">
+                    <div class="flex gap-4 items-start bg-white p-4 rounded-xl shadow-sm">
+                        <div class="bg-indigo-100 p-2 rounded-lg text-indigo-600 font-bold h-fit shrink-0">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg sm:text-xl text-light-mode">Cukup Ketik/Paste Materi</h4>
+                            <p class="text-gray-600 text-sm sm:text-base">Masukkan teks materi pelajaran Anda, AI akan memprosesnya secara instan.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start bg-white p-4 rounded-xl shadow-sm">
+                        <div class="bg-indigo-100 p-2 rounded-lg text-indigo-600 font-bold h-fit shrink-0">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg sm:text-xl text-light-mode">Visual Otomatis</h4>
+                            <p class="text-gray-600 text-sm sm:text-base">AI akan mencari aset gambar dan video yang relevan dengan materi secara otomatis.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start bg-white p-4 rounded-xl shadow-sm">
+                        <div class="bg-indigo-100 p-2 rounded-lg text-indigo-600 font-bold h-fit shrink-0">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg sm:text-xl text-light-mode">Siap Tayang</h4>
+                            <p class="text-gray-600 text-sm sm:text-base">Video profesional lengkap dengan narasi suara manusia asli siap digunakan di kelas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FEATURES (Conviction) -->
+    <section class="py-16 px-4 sm:px-6 bg-white text-light-mode">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">Fitur Utama Yang Memudahkan Hidup Anda</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- Fitur 1 -->
+                <div class="p-6 border border-gray-100 rounded-2xl hover:border-indigo-500 transition duration-300 shadow-sm bg-gray-50/50 card-spacing">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-2xl">🎓</div>
+                    <h4 class="font-bold text-lg mb-2 text-light-mode">Pedagogi</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Naskah interaktif, akurat secara ilmiah, & bebas miskonsepsi sesuai jenjang SD-SMA.</p>
+                </div>
+                <!-- Fitur 2 -->
+                <div class="p-6 border border-gray-100 rounded-2xl hover:border-indigo-500 transition duration-300 shadow-sm bg-gray-50/50 card-spacing">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-2xl">🔄</div>
+                    <h4 class="font-bold text-lg mb-2 text-light-mode">Smart Auto-Sync</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Gambar dan suara narator (Natural AI) tersinkron otomatis. Tak ada lagi visual tertinggal.</p>
+                </div>
+                <!-- Fitur 3 -->
+                <div class="p-6 border border-gray-100 rounded-2xl hover:border-indigo-500 transition duration-300 shadow-sm bg-gray-50/50 card-spacing">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4 text-2xl">💬</div>
+                    <h4 class="font-bold text-lg mb-2 text-light-mode">Dynamic Subtitles</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Gaya subtitle ala kreator pro yang terbukti meningkatkan retensi memori siswa.</p>
+                </div>
+                <!-- Fitur 4 -->
+                <div class="p-6 border border-gray-100 rounded-2xl hover:border-indigo-500 transition duration-300 shadow-sm bg-gray-50/50 card-spacing">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 text-2xl">📺</div>
+                    <h4 class="font-bold text-lg mb-2 text-light-mode">Render UHD</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Ekspor 1080p/4K tajam dalam format Landscape (Kelas) atau Portrait (TikTok/Reels).</p>
+                </div>
+            </div>
+
+            <!-- SUB-SECTION: DEMO VIDEOS GRID -->
+            <div class="border-t border-gray-100 pt-16">
+                <div class="text-center mb-10">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-3">Lihat Contoh Hasil Video AI Edu VGEN Pro</h3>
+                    <p class="text-gray-500 text-sm sm:text-base">Hasil rendering nyata yang dibuat otomatis hanya dari naskah teks pelajaran.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    <!-- Video 1 -->
+                    <div class="bg-gray-950 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-video relative">
+                        <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/U6h-FRhgiqI" title="Edu-VGen Contoh Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="bg-gray-950 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-video relative">
+                        <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/F979Pxjp6Vk" title="Edu-VGen Contoh Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="bg-gray-950 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-video relative">
+                        <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/9dllyPsz4xQ" title="Edu-VGen Contoh Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="bg-gray-950 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-video relative">
+                        <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/vb4-xZh3cjk" title="Edu-VGen Contoh Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ACTION (Pricing) -->
+    <section id="pricing" class="py-16 px-4 sm:px-6 bg-colorful text-dark-mode">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Investasi Terbaik Untuk Karir Guru Anda</h2>
+            <p class="text-base sm:text-xl mb-10 text-indigo-100 px-4">Hemat waktu, hemat tenaga, dan buat siswa Anda kagum dengan video materi yang luar biasa.</p>
+            
+            <div class="bg-white text-gray-900 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl relative overflow-hidden max-w-xl mx-auto">
+                <div class="absolute top-0 right-0 bg-red-500 text-white px-8 py-1.5 rotate-45 translate-x-6 translate-y-3 font-bold text-xs tracking-wider">PROMO</div>
+                
+                <h3 class="text-xl sm:text-2xl font-bold mb-2 text-light-mode">Akses Full Tools AI Edu VGEN Pro</h3>
+                <p class="text-gray-500 text-sm mb-6">Lisensi Lifetime - Sekali Bayar</p>
+                
+                <div class="mb-6">
+                    <span class="text-gray-400 line-through text-lg sm:text-2xl">Rp 249.000</span>
+                    <div class="text-4xl sm:text-6xl font-black text-indigo-600 my-1">Rp 79.000</div>
+                    <p class="text-red-500 text-xs sm:text-sm font-bold mt-2">*Harga promo dapat berubah sewaktu-waktu</p>
+                </div>
+
+                <ul class="text-left space-y-3.5 mb-8 max-w-xs sm:max-w-sm mx-auto text-sm sm:text-base">
+                    <li class="flex items-center gap-3 text-light-mode">✨ <span class="font-medium">Akses AI Video Maker Otomatis</span></li>
+                    <li class="flex items-center gap-3 text-light-mode">✨ <span class="font-medium">Voiceover AI Natural (Bahasa Indo)</span></li>
+                    <li class="flex items-center gap-3 text-light-mode">✨ <span class="font-medium">Template Naskah Pedagogi SD-SMA</span></li>
+                    <li class="flex items-center gap-3 text-light-mode">✨ <span class="font-medium">Update Fitur Berkala</span></li>
+                    <li class="flex items-center gap-3 text-light-mode">✨ <span class="font-medium">Grup Support Eksklusif Guru</span></li>
+                </ul>
+
+                <a href="#" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-lg sm:text-2xl font-extrabold py-4 rounded-xl transition duration-300 transform hover:scale-[1.02] shadow-md">
+                    MILIKI SEKARANG JUGA
+                </a>
+                
+                <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                    <div class="flex gap-2 opacity-60">
+                        <span class="text-xs font-bold bg-gray-200 px-2 py-0.5 rounded">BANK</span>
+                        <span class="text-xs font-bold bg-gray-200 px-2 py-0.5 rounded">E-WALLET</span>
+                    </div>
+                    <p class="text-xs text-gray-400">Metode Pembayaran Lengkap & Aman</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 px-4 bg-gray-900 text-gray-400 text-center">
+        <div class="container mx-auto">
+            <p class="mb-4 text-sm">&copy; 2023-2026 Edu-VGen Pro. All rights reserved.</p>
+            <div class="flex justify-center gap-6 text-xs sm:text-sm">
+                <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+                <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+                <a href="#" class="hover:text-white transition">Hubungi Kami</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY CTA MOBILE -->
+    <div class="sticky-cta lg:hidden bg-white p-3.5 shadow-[0_-5px_20px_rgba(0,0,0,0.08)] border-t border-gray-100">
+        <a href="#pricing" class="block w-full bg-orange-500 text-white text-center font-bold py-3.5 rounded-xl text-base active:scale-[0.98] transition-transform shadow-md">
+            Miliki Sekarang Juga - Rp 79rb
+        </a>
+    </div>
+
+</body>
+</html>
